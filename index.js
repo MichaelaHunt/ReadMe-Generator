@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
 import inquirer from "inquirer";
 import fs from 'fs';
-import generateMarkdown from "./utils/generateMarkdown";
+import generateMarkdown from "./utils/generateMarkdown.js";
 // TODO: Create an array of questions for user input
 const questions = [
     "What is your GitHub username?",
@@ -11,14 +11,16 @@ const questions = [
     "What kind of license should your project have?",
     "What features does your project have?",
     "What command should be run to run tests?",
-    "What does the user need to know about using the project?",
+    "What does the user need to know to use this project?",
+    "Write the installation instructions here:",
     "What does the user need to know about contributing to the repo?",
 ];
 
 // TODO: Create a function to write README file
 function writeToFile(data) {
     const fileContent = generateMarkdown(data);
-    fs.writeFile(`dist/README.md`, fileContent, () => {});
+    fs.writeFile(`dist/README.md`, fileContent, (err) =>
+        err ? console.error(err) : console.log('File written successfully.'));
 }
 
 // TODO: Create a function to initialize app
@@ -69,6 +71,11 @@ function init() {
         {
             type: 'input',
             message: questions[8],
+            name: 'installationDetails'
+        },
+        {
+            type: 'input',
+            message: questions[9],
             name: 'contributeDetails'
         },
     ]).then((response) => {writeToFile(response);});
