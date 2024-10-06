@@ -35,6 +35,10 @@ function generateMarkdown(data) {
 
   ${data.usageDetails}
 
+  ## Credits
+
+  https://github.com/${data.username}
+
   ## License
 
   ${data.licenseDetails}
@@ -43,7 +47,7 @@ function generateMarkdown(data) {
 
   ${data.featureDetails}
 
-  ## Contribute
+  ## How to Contribute
 
   ${data.contributeDetails}
 
