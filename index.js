@@ -1,6 +1,7 @@
 // TODO: Include packages needed for this application
 import inquirer from "inquirer";
 import fs from 'fs';
+import generateMarkdown from "./utils/generateMarkdown";
 // TODO: Create an array of questions for user input
 const questions = [
     "What is your GitHub username?",
@@ -16,7 +17,8 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(data) {
-    fs.writeFile(`dist/README.md`, JSON.stringify(data), () => {});
+    const fileContent = generateMarkdown(data);
+    fs.writeFile(`dist/README.md`, fileContent, () => {});
 }
 
 // TODO: Create a function to initialize app
