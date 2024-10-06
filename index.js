@@ -6,11 +6,11 @@ const questions = [
     "What is your GitHub username?",
     "What is your email address?",
     "What is your project's name?",
-    "Please write a short description of your project.",
+    "Please write a short description of your project. Consider your motivation, the problem this project solves, and what you learned.",
     "What kind of license should your project have?",
     "What features does your project have?",
     "What command should be run to run tests?",
-    "What does the user need to know about using the repo?",
+    "What does the user need to know about using the project?",
     "What does the user need to know about contributing to the repo?",
 ];
 
