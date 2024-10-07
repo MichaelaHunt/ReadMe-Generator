@@ -17,15 +17,15 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(data) {
-    const fileContent = generateMarkdown(data);
+function writeToFile(data) {//it's always going to be README, so I removed the filename.
+    const fileContent = generateMarkdown(data);//generate the string literal using the user's answers
     fs.writeFile(`dist/README.md`, fileContent, (err) =>
         err ? console.error(err) : console.log('File written successfully.'));
 }
 
 // TODO: Create a function to initialize app
 function init() {
-    //ask each question here? use generatemarkdown module to create data, send data to writeToFile
+    //ask each question here? send data to writeToFile
     inquirer.prompt([
         {
             type: 'input',

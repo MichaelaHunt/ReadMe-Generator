@@ -18,18 +18,11 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  switch (license) {
-    case "MIT":
-      return "https://opensource.org/licenses/MIT";
-    case "ISC":
-      return "https://opensource.org/licenses/ISC";
-    case "Apache 2.0":
-      return "https://opensource.org/licenses/Apache-2.0";
-    case "GNU GPLv3":
-      return "https://www.gnu.org/licenses/gpl-3.0";
-    case "None":
-      return "";
-  };
+if (license != 'None') {
+  return `- [License](#license)`
+} else {
+  return "";
+}
 }
 
 // TODO: Create a function that returns the license section of README
@@ -38,32 +31,10 @@ function renderLicenseSection(license) {
   if (license != "None") {
     return `## License
 
-  This project is protected under the ${license} license.  
-  If you'd like to learn more about this license, please visit: ${renderLicenseLink(license)}`;
+  This project is protected under the ${license} license.`
   }
   else {
     return "";
-  }
-}
-
-function renderTableOfContents(license) {
-  if (license != "None") {
-    return `## Table of Contents
-
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [License](#license)
-  - [Features](#features)
-  - [Contribute](#contribute)
-  - [Tests](#tests)`;
-  } else {
-    return `## Table of Contents
-
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [Features](#features)
-  - [Contribute](#contribute)
-  - [Tests](#tests)`;
   }
 }
 
@@ -76,7 +47,15 @@ function generateMarkdown(data) {
 
   ${data.descriptionDetails}
 
-  ${renderTableOfContents(data.licenseDetails)}
+  ## Table of Contents
+
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Credits](#credits)
+  ${renderLicenseLink(data.licenseDetails)}
+  - [Features](#features)
+  - [Contribute](#contribute)
+  - [Tests](#tests)
 
   ## Installation
 
@@ -108,7 +87,6 @@ function generateMarkdown(data) {
 
   My profile: https://github.com/${data.username}  
   Please direct any questions to ${data.email}!
-
 `;
 }
 
