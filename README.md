@@ -37,6 +37,15 @@
 
   Auto-generation of README.md
 
+  ## Screenshots
+
+![alt text](<Screenshot 2024-10-07 at 10.24.01 PM.png>)
+![alt text](<Screenshot 2024-10-07 at 10.25.39 PM.png>)
+
+  ## Video Walkthrough
+
+  https://drive.google.com/file/d/1xuZyz3lg9DXjXNEFeuO8HFUAbu76sdLi/view?usp=drive_link
+
   ## Tests
 
   To begin testing, use the following command: node index
