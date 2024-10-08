@@ -44,7 +44,7 @@
 
   ## Video Walkthrough
 
-  https://drive.google.com/file/d/1xuZyz3lg9DXjXNEFeuO8HFUAbu76sdLi/view?usp=drive_link
+  https://drive.google.com/file/d/1rU8F19pZwK79wYlLtwkLDa5ROM7bsNEe/view?usp=drive_link
 
   ## Tests
 

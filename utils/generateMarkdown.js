@@ -67,7 +67,7 @@ function generateMarkdown(data) {
 
   ## Credits
 
-  https://github.com/${data.username}
+  ${data.creditDetails}
 
   ${renderLicenseSection(data.licenseDetails)}
 

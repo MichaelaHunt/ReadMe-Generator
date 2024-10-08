@@ -1,15 +1,15 @@
 # Mikky's ReadMe Generator
-  [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+  [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
   ## Description
 
-  This is my project description! I learned... This project allows the user to...
+  This is my project description... I learned... This allows the user to...
 
   ## Table of Contents
 
   - [Installation](#installation)
   - [Usage](#usage)
-  - [Credits](#credits)
+  - [Credits](#credits)  
   - [License](#license)
   - [Features](#features)
   - [Contribute](#contribute)
@@ -17,23 +17,23 @@
 
   ## Installation
 
-  download, open in terminal, then type node index to get project running!
+  download files, open folder in terminal, type node index to get project running!
 
   ## Usage
 
-  have node.js installed!
+  Needs node.js to work!
 
   ## Credits
 
-  https://github.com/MichaelaHunt
+  stack overflow, google, wikipedia, youtube, my grandma's old books
 
   ## License
 
-  This project is protected under the Apache 2.0 license.
+  This project is protected under the GNU GPLv3 license.
 
   ## Features
 
-  Auto-generation of README.md file
+  Features here!
 
   ## Contributing
 

@@ -11,6 +11,7 @@ const questions = [
     "What kind of license should your project have?",
     "What features does your project have?",
     "What command should be run to run tests?",
+    "What resources did you use to help build this project?",
     "What does the user need to know to use this project?",
     "Write the installation instructions here:",
     "What does the user need to know about contributing to the repo?",
@@ -66,16 +67,21 @@ function init() {
         {
             type: 'input',
             message: questions[7],
-            name: 'usageDetails'
+            name: 'creditDetails'
         },
         {
             type: 'input',
             message: questions[8],
-            name: 'installationDetails'
+            name: 'usageDetails'
         },
         {
             type: 'input',
             message: questions[9],
+            name: 'installationDetails'
+        },
+        {
+            type: 'input',
+            message: questions[10],
             name: 'contributeDetails'
         },
     ]).then((response) => {writeToFile(response);});
